@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/cheeseburger.png" type="image/x-icon">
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="index.css">
+    <!-- JS file -->
+    <script src="index.js"></script>
+    <title>MahDonalds</title>
+</head>
+<body>
+
+    <!-- header start -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">MahDonalds</a>
+            </div>
+
+            <input type="checkbox" id="check">
+
+            <label class="container-menu" for="check">
+                <div class="checkmark">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </label>
+    
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">home</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#book_table">book table</a></li>
+                </ul>
+    
+                <div class="icons">
+                    <a href="Register/register.html"><i class="fa-solid fa-user-plus"></i></a>
+                    <a href="#Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#menu" class="order">Order Online</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- home start -->
+    <div class="home" id="home">
+        <div class="container">
+            <div class="txts">
+                <h1>Fast Food Restaurant</h1>
+                <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+                <a href="#menu" class="order-btn">Order Online</a>
+            </div>
+        </div>
+    </div>
+    <!-- home end -->
+
+    <!-- offer start -->
+    <section class="offer">
+        <div class="container">
+            <div class="offer-child">
+                    <div class="image">
+                        <img src="images/o1.jpg" alt="">
+                    </div>
+
+                    <div class="txts">
+                        <h3>Tasty Thursdays</h3>
+                        <h2>20% <span>Off</span></h2>
+                        <button class="order-btn" onclick="offrt_burger()">Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+            </div>
+
+            <div class="offer-child">
+                <div class="image">
+                    <img src="images/o2.jpg" alt="">
+                </div>
+
+                <div class="txts">
+                    <h3>Pizza Days</h3>
+                    <h2>15% <span>Off</span></h2>
+                    <button class="order-btn" onclick="offrt_pizza()">Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+        </div>
+        </div>
+    </section>
+    <!-- offer end -->
+
+    <!-- menu start -->
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2>Our Menu</h2>
+            <button id="all" class="section-btn"  onclick="all_1()">All</button>
+            <button id="burger" class="section-btn"  onclick="burger()">Burger</button>
+            <button id="pizza" class="section-btn"  onclick="pizza()">Pizza</button>
+            <button id="pasta" class="section-btn"  onclick="pasta()">Pasta</button>
+            <button id="fries" class="section-btn"  onclick="fries()">Fries</button>
+        </div>
+        <div class="container">
+
+            <!-- 1 -->
+            <div class="product pizza">
+                <div class="image">
+                    <img src="images/f1.png" alt="">
+                </div>
+                <div class="txts">
+                    <p>Delicious Pizza</p>
+                    <span>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</span>
+                    <div class="price">
+                        <span>$20</span>
+                        <a href="Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="product burger">
+                <div class="image">
+                    <img src="images/f2.png" alt="" style="width: 180px;">
+                </div>
+                <div class="txts">
+                    <p>Delicious Burger</p>
+                    <span>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</span>
+                    <div class="price">
+                        <span>$15</span>
+                        <a href="Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="product pizza">
+                <div class="image">
+                    <img src="images/f3.png" alt="" style="width: 150px;">
+                </div>
+                <div class="txts">
+                    <p>Delicious Pizza</p>
+                    <span>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</span>
+                    <div class="price">
+                        <span>$17</span>
+                        <a href="Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="product pasta">
+                <div class="image">
+                    <img src="images/f4.png" alt="" style="width: 200px;">
+                </div>
+                <div class="txts">
+                    <p>Delicious Pasta</p>
+                    <span>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</span>
+                    <div class="price">
+                        <span>$18</span>
+                        <a href="Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="product fries">
+                <div class="image">
+                    <img src="images/f5.png" alt="" style="width: 200px;">
+                </div>
+                <div class="txts">
+                    <p>French Fries</p>
+                    <span>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</span>
+                    <div class="price">
+                        <span>$10</span>
+                        <a href="Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="product pizza">
+                <div class="image">
+                    <img src="images/f6.png" alt="" style="width: 160px;">
+                </div>
+                <div class="txts">
+                    <p>Delicious Pizza</p>
+                    <span>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</span>
+                    <div class="price">
+                        <span>$15</span>
+                        <a href="Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="product burger">
+                <div class="image">
+                    <img src="images/f7.png" alt="" style="width: 160px;">
+                </div>
+                <div class="txts">
+                    <p>Tasty Burger</p>
+                    <span>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</span>
+                    <div class="price">
+                        <span>$12</span>
+                        <a href="Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="product burger">
+                <div class="image">
+                    <img src="images/f8.png" alt="" style="width: 160px;">
+                </div>
+                <div class="txts">
+                    <p>Delicious Burger</p>
+                    <span>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</span>
+                    <div class="price">
+                        <span>$14</span>
+                        <a href="Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="product pasta">
+                <div class="image">
+                    <img src="images/f9.png" alt="" style="width: 160px;">
+                </div>
+                <div class="txts">
+                    <p>Delicious Pasta</p>
+                    <span>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</span>
+                    <div class="price">
+                        <span>$10</span>
+                        <a href="Register/register.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- menu end -->
+
+    <!-- about start -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="image">
+                <img src="images/about-img.png" alt="">
+            </div>
+
+            <div class="txts">
+                <h2>We Are MahDonalds</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+                <p id="read-more">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptas enim itaque earum ratione, eligendi consequatur iste nemo repellendus rerum odio vitae. Ipsum, nisi cupiditate!</p>
+                <button class="order-btn" onclick="read_more()">Read More</button>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+
+    <!-- book table start -->
+    <section class="book-table" id="book_table">
+        <div class="container">
+            <form action="index-2.html#book_table">
+                <h2>Book A Table</h2>
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Your Email" required id="email">
+                <select name="persons" required>
+                    <option value="" disabled selected>How Many Persons?</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input type="date" id="date" required>
+                <p id="error"></p>
+                <button class="order-btn" onclick="book()">BOOK NOW</button>
+            </form>
+        </div>
+    </section>
+    <!-- book table end -->
+
+    <!-- customers start -->
+    <section class="customers">
+        <div class="title">
+            <h2>What Says Our Customers</h2>
+        </div>
+
+        <div class="container">
+
+            <div class="customer">
+                <div class="txts">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae enim quos sapiente possimus alias perferendis omnis error vero ea ipsa.</p>
+                    <p class="name">Moana Michell</p>
+                    <p>magne aliqua</p>
+                </div>
+
+                <div class="image">
+                    <img src="images/client1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="customer">
+                <div class="txts">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae enim quos sapiente possimus alias perferendis omnis error vero ea ipsa.</p>
+                    <p class="name">Mike Hamell</p>
+                    <p>magne aliqua</p>
+                </div>
+
+                <div class="image">
+                    <img src="images/client2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- customers end -->
+
+    <!-- footer start -->
+    <section class="footer">
+        <div class="container">
+            <div class="col contact">
+                <h3>Contact Us</h3>
+                <a href="https://maps.app.goo.gl/Ltqan7GR53PVaQm79"><i class="fa-solid fa-location-dot"></i> Location</a>
+                <a href="tel:01093156290"><i class="fa-solid fa-phone"></i> Call +01093156290</a>
+                <a href="mailto:mahdonalds@gmail.com"><i class="fa-solid fa-envelope"></i> mahdonalds@gmail.com</a>
+            </div>
+
+            <div class="col mahdonalds">
+                <h3>MahDonalds</h3>
+                <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+
+            <div class="col">
+                <h3>Opening Hours</h3>
+                <p>Opening Hours</p>
+                <p>10.00 Am -10.00 Pm</p>
+            </div>
+        </div>
+        <div class="txts">
+            <p>© 2024 All Rights Reserved By Vieena Software</p>
+            <p class="name">© Developed By David Nafie</p>
+            <p class="ass">Assistant Kero Ibrahim</p>
+        </div>
+    </section>
+    <!-- footer end -->
+    
+    
+</body>
+</html>

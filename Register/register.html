@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="shortcut icon" href="../images/cheeseburger.png" type="image/x-icon">
+    <title>MahDonalds Register</title>
+</head>
+<body style="background-color: #222831;">
+    <div class="register">
+        <div class="container">
+                <img src="2150914765.jpg" alt="">
+
+                <form action="../index-2.html">
+                    <div class="form">
+                        <h1>Register Form</h1>
+                        <input type="text" placeholder="Your Name" id="name" name="name" minlength="3">
+        
+                        <input type="email" placeholder="Email Address" id="email" name="email" required>
+        
+                        <input type="password" placeholder="Password" id="pass" required minlength="6">
+        
+                        <button onclick="register()">Register</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+
+    <script>
+        function register(){
+            let email = document.getElementById("email").value;
+            localStorage.setItem("texvalue", email)
+        }
+    </script>
+
+    <!-- <script>
+
+        let name = document.getElementById("name")
+        let email = document.getElementById("email")
+        let pass = document.getElementById('pass')
+        let com_pass = document.getElementById('com-pass')
+
+        function register() {
+            if (name.value.length < 3) {
+                document.getElementById('name-error').innerHTML =  "Your Name Less than 3 Letters"
+            }
+            else if (name.value.length > 2) {
+                document.getElementById('name-error').innerHTML =  ""
+            }
+
+            else if (!email.value.includes('@')) {
+                document.getElementById("email-error").innerHTML = "The Email Must Contain '@'"
+            }
+            else if (email.value.includes('@')) {
+                document.getElementById("email-error").innerHTML = ""
+            }
+            else if (email.value.length < 1) {
+                document.getElementById("email-error").innerHTML = "Enter Your Email"
+            }
+            else if (email.value.length > 1) {
+                document.getElementById("email-error").innerHTML = ""
+            }
+
+            else if (pass.value.length < 6){
+                document.getElementById('pass-error').innerHTML =  "Passwords Less than 6 Letters"
+            }
+            else if (com_pass.value != pass.value) {
+                document.getElementById('com-pass-error').innerHTML =  "Passwords are not the same"
+            }
+            else {
+                location.href="file:///C:/Users/David%20Nafie/OneDrive/Desktop/Front-end/Projects/MahDonalds/MahDonalds/index-2.html"
+            }
+        }
+    </script> -->
+</body>
+</html>
